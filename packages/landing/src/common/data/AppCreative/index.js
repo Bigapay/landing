@@ -47,37 +47,37 @@ import keyFeature3 from '../../assets/image/appCreative/key_feature/3.svg';
 import keyFeature4 from '../../assets/image/appCreative/key_feature/4.svg';
 
 export const keyFeatures = {
-  title: 'Send Money Anywhere',
+  title: 'Pay Anyone, Anywhere',
   slogan:
-    'Bigapy is an instant, easy and affordable payment service that allows you to send money to anyone with a cell phone and does not require a bank account',
+    'Bigapay is an instant, easy and affordable payment service that allows you to send currency to anyone, no bank account required',
   features: [
     {
       id: 1,
       icon: keyFeature1,
-      title: 'Make Snap real',
+      title: 'Accept Payments Easily',
       description:
-        'We’re driven beyond just finishing the projects. We want to find smart solutions.',
+        'Accept credit card and other alternative payments in multi-currency accounts: EUR, USD, CAD, HKD, RMB, PHP, GBP etc.',
     },
     {
       id: 2,
       icon: keyFeature2,
-      title: 'Total Virtual Reality',
+      title: 'Integration Marketplace',
       description:
-        'We’re driven beyond just finishing the projects. We want to find smart online solutions.',
+        'Easily connect all your favorite accounting, crm, marketing, payment, financial apps, and more under one flexible platform.',
     },
     {
       id: 3,
       icon: keyFeature3,
-      title: 'Full 360 View',
+      title: 'Cashless Way To Shop ',
       description:
-        'We’re driven beyond just finishing the projects. We want to find smart solutions.',
+        'Simply fund your account and use your virtual China Union Pay, Visa or MasterCard cards to start shopping online or in person.',
     },
     {
       id: 4,
       icon: keyFeature4,
       title: 'AI Fraud Prevention',
       description:
-        'We’re driven beyond just finishing the projects. We want to find smart solutions.',
+        'We’re driven beyond just securing our networks, devices and methods, so we are commited the highest standards of security.',
     },
   ],
 };
@@ -88,18 +88,18 @@ export const keyFeatures = {
 import chooseThumb from '../../assets/image/appCreative/chooseThumb.png';
 
 export const chooseUs = {
-  title: 'Why you choose Custom app for your daily use?',
+  title: 'Why you choose BigaPay to send money?',
   thumb: chooseThumb,
   features: [
     {
       id: 1,
-      title: 'Front-end Development',
+      title: 'Recieve Quick Payments',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        'Real-time money transfer to any mobile or bank account of your choice using BigaPay.',
     },
     {
       id: 2,
-      title: 'Front-end Development',
+      title: 'Easy App',
       description:
         'We’re driven beyond just finishing the projects. We want to find solutions.',
     },
