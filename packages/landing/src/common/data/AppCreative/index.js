@@ -99,15 +99,15 @@ export const chooseUs = {
     },
     {
       id: 2,
-      title: 'Easy App',
+      title: 'Use Any Payment Method ',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        'Fund your BigaPay account via voucher, charge cards, ewallet and bank transfers.',
     },
     {
       id: 3,
-      title: 'Front-end Development',
+      title: 'Crypto Friendly',
       description:
-        'We’re driven beyond just finishing the projects. We want to find solutions.',
+        'Convert your crypto and other coins to your favorite currency in near real-time.',
     },
   ],
 };
