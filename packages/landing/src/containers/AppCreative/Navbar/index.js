@@ -16,7 +16,7 @@ import { x } from 'react-icons-kit/feather/x';
 import LoginModal from '../LoginModal';
 import lockIcon from 'common/assets/image/appCreative/icons/lock.svg';
 
-import NavbarWrapper, { MenuArea, MobileMenu, navbarStyle, button } from './navbar.style';
+import NavbarWrapper, { MenuArea, MobileMenu, navbarStyle } from './navbar.style';
 
 import { navbar } from 'common/data/AppCreative';
 
@@ -83,7 +83,7 @@ const CloseModalButton = () => (
       };
 
   return (
-    <NavbarWrapper className="navbar" {...navbarStyle}>
+    <NavbarWrapper className="navbar">
       <Container>
           <Logo
             href="/"
