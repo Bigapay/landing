@@ -88,7 +88,7 @@ export const keyFeatures = {
 import chooseThumb from '../../assets/image/appCreative/chooseThumb.png';
 
 export const chooseUs = {
-  title: 'Why you choose BigaPay to send money?',
+  title: 'Why choose BigaPay to pay and send money?',
   thumb: chooseThumb,
   features: [
     {
@@ -473,7 +473,7 @@ export const testimonial = {
 import availableThumb from '../../assets/image/appCreative/availableThumb.png';
 
 export const availableStore = {
-  title: 'We are available in both play store & app store ✌️',
+  title: 'We are available in both play store & app store',
   description:
     'There will be a day–in our lifetime–when we get to celebrate every person on the planet having access.',
   thumb: availableThumb,

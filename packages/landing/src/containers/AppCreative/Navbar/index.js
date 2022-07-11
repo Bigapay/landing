@@ -14,7 +14,7 @@ import { Icon } from 'react-icons-kit';
 import { menu } from 'react-icons-kit/feather/menu';
 import { x } from 'react-icons-kit/feather/x';
 import LoginModal from '../LoginModal';
-import lockIcon from 'common/assets/image/AppCreative/icons/lock.svg';
+import lockIcon from 'common/assets/image/appCreative/icons/lock.svg';
 
 import NavbarWrapper, { MenuArea, MobileMenu, navbarStyle, button } from './navbar.style';
 

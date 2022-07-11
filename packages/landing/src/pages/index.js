@@ -57,10 +57,10 @@ export default function AppCreative() {
             <KeyFeatures />
             <ChooseUs />
             <Experiences />
+            <Testimonials />
             <FeatureSlider />
             <Pricing />
             <AvailableStore />
-            <Testimonials />
             <CallToAction />
           </ContentWrapper>
           <Footer />
