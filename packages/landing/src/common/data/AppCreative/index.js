@@ -107,7 +107,7 @@ export const chooseUs = {
       id: 3,
       title: 'Crypto Friendly',
       description:
-        'Convert your crypto and other coins to your favorite currency in near real-time.',
+        'Convert your bitcoin and other tokens* to your favorite currency in near real-time.',
     },
   ],
 };
@@ -295,8 +295,8 @@ export const pricing = {
   pricingItems: [
     {
       id: 1,
-      package_name: 'Starter Pack',
-      price: '18',
+      package_name: 'Personal Account',
+      price: 'Free',
       trial_day: 15,
       isRecommended: false,
       features: [
@@ -329,7 +329,7 @@ export const pricing = {
     },
     {
       id: 2,
-      package_name: 'Premium Pack',
+      package_name: 'Business Account',
       price: '29',
       trial_day: 30,
       isRecommended: true,
@@ -363,9 +363,9 @@ export const pricing = {
     },
     {
       id: 3,
-      package_name: 'Ultimate Pack',
-      price: '35',
-      trial_day: 45,
+      package_name: 'Enterprise Account',
+      price: 'Call us',
+      trial_day: 0,
       isRecommended: false,
       features: [
         {
@@ -675,7 +675,7 @@ export const footerWidget = {
       {
         id: 4,
         url: '//status.bigapay.com',
-        text: 'Status',
+        text: 'Server Status',
       },
     ],
   },
