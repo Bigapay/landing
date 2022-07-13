@@ -113,7 +113,7 @@ export const MenuArea = styled.div`
     float: right;
     align-items: center;
     display: grid;
-    gap: 40px;
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     button {   
       font-size: 15px;
@@ -124,11 +124,12 @@ export const MenuArea = styled.div`
     }
   }
   .navbar_button_one {
-    font-weight: 400;
-    margin-right: 12px;
     background-color: transparent;
     color: ${themeGet('colors.black')};
-    padding: 0;
+    font-weight: 500;
+    text-transform: inherit;
+    padding-left: 13px;
+    padding-right: 13px;
     border: 0px solid ${themeGet('colors.borderColor')};
     .btn-icon {
       margin-right: 5px;

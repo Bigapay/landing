@@ -56,12 +56,12 @@ export default function AppCreative() {
             <Banner />
             <KeyFeatures />
             <ChooseUs />
-            <Experiences />
-            <Testimonials />
-            <FeatureSlider />
-            <Pricing />
-            <AvailableStore />
             <CallToAction />
+            <Experiences />
+            <Pricing />
+            <FeatureSlider />
+            <Testimonials />
+            <AvailableStore />
           </ContentWrapper>
           <Footer />
         </AppWrapper>

@@ -22,12 +22,12 @@ const CallToAction = () => {
           <ContentWrap>
             <Heading
               as="h3"
-              content="Does your Enterprise or FI need more features and support?"
+              content="Does your Enterprise need more features and support?"
             />
             <Link href="/contact-sales">
             <a className="">
             <ButtonWrap>
-                  <Button {...button} title="Contact Sales" />
+                  <Button title="Contact Sales" />
             </ButtonWrap>
              </a>
              </Link>

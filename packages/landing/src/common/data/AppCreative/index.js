@@ -296,8 +296,8 @@ export const pricing = {
     {
       id: 1,
       package_name: 'Personal Account',
-      price: 'Free',
-      trial_day: 15,
+      price: '0',
+      trial_day: 30,
       isRecommended: false,
       features: [
         {
@@ -365,7 +365,7 @@ export const pricing = {
       id: 3,
       package_name: 'Enterprise Account',
       price: 'Call us',
-      trial_day: 0,
+      trial_day: 60,
       isRecommended: false,
       features: [
         {
@@ -659,22 +659,22 @@ export const footerWidget = {
     menuItems: [
       {
         id: 1,
-        url: '//developers.bigapay.com',
+        url: 'https://developers.bigapay.com',
         text: 'Developer Portal',
       },
       {
         id: 2,
-        url: '//api.bigapay.com',
+        url: 'https://api.bigapay.com',
         text: 'BigaPay API',
       },
       {
         id: 3,
-        url: '//docs.bigapay.com',
+        url: 'https://docs.bigapay.com',
         text: 'API Documentation',
       },
       {
         id: 4,
-        url: '//status.bigapay.com',
+        url: 'https://status.bigapay.com',
         text: 'Server Status',
       },
     ],

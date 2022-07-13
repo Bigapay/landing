@@ -16,7 +16,7 @@ import { x } from 'react-icons-kit/feather/x';
 import LoginModal from '../LoginModal';
 import lockIcon from 'common/assets/image/appCreative/icons/lock.svg';
 
-import NavbarWrapper, { MenuArea, MobileMenu, navbarStyle } from './navbar.style';
+import NavbarWrapper, { MenuArea, MobileMenu, button } from './navbar.style';
 
 import { navbar } from 'common/data/AppCreative';
 
@@ -89,26 +89,14 @@ const CloseModalButton = () => (
             href="/"
             logoSrc={logoImage}
             title="BigaPay"
-            className="main-logo sticky-logo"
+            className="main-logo"
           />
             {/* end of logo */}
 
           <MenuArea>
           <ScrollSpyMenu className="menu" menuItems={navMenu} offset={-84} />
           {/* end of main menu */}
-          <Button
-                {...button}
-                iconPosition="left"
-                icon={<img src={lockIcon?.src} alt="lock icon" />}
-                title="Login"
-                onClick={handleLoginModal}
-                className="navbar_button navbar_button_one"
-              />
-              <Link href="//apply.bigapay.com">
-                <a className="navbar_button navbar_button_two">
-                  <Button {...button} title="Sign Up" />
-                </a>
-              </Link>
+
           <Button
             className="menubar"
             icon={
@@ -125,29 +113,7 @@ const CloseModalButton = () => (
             onClick={() => toggleHandler('menu')}
           />
         </MenuArea>
-      </Container>
-      {/* start mobile menu */}
-        <MobileMenu className={`mobile-menu ${state.mobileMenu ? 'active' : ''}`}>
-            <Container>
-              <Scrollspy
-                className="menu"
-                items={scrollItems}
-                offset={-84}
-                currentClassName="active"
-              >
-                {navMenu.map((menu, index) => (
-                  <li key={`menu_key${index}`}>
-                    <AnchorLink
-                      href={menu.path}
-                      offset={menu.offset}
-                      onClick={handleRemoveMenu}
-                    >
-                      {menu.label}
-                    </AnchorLink>
-                  </li>
-                ))}
-              </Scrollspy>
-              <Button
+        <Button
                 {...button}
                 iconPosition="left"
                 icon={<img src={lockIcon?.src} alt="lock icon" />}
@@ -155,22 +121,55 @@ const CloseModalButton = () => (
                 onClick={handleLoginModal}
                 className="navbar_button navbar_button_one"
               />
-              <Link href="//apply.bigapay.com">
+              <Link href="apply.bigapay.com">
                 <a className="navbar_button navbar_button_two">
                   <Button {...button} title="Sign Up" />
                 </a>
               </Link>
-            </Container>
-          </MobileMenu>
-          {/* end of mobile menu */}
-          
+      </Container>
+
+      {/* start mobile menu */}
+      <MobileMenu className={`mobile-menu ${state.mobileMenu ? 'active' : ''}`}>
+        <Container>
+          <Scrollspy
+            className="menu"
+            items={scrollItems}
+            offset={-84}
+            currentClassName="active"
+          >
+            {navMenu.map((menu, index) => (
+              <li key={`menu_key${index}`}>
+                <AnchorLink
+                  href={menu.path}
+                  offset={menu.offset}
+                  onClick={handleRemoveMenu}
+                >
+                  {menu.label}
+                </AnchorLink>
+              </li>
+            ))}
+          </Scrollspy>
+          <Button
+                {...button}
+                iconPosition="left"
+                icon={<img src={lockIcon?.src} alt="lock icon" />}
+                title="Login"
+                className=""
+                onClick={handleLoginModal}
+              />
+          <Link href="apply.bigapay.com">
+          <a>
+          <Button title="Get Started" />
+          </a>
+          </Link>
+        </Container>
+      </MobileMenu>
+      {/* end of mobile menu */}
     </NavbarWrapper>
   );
+
   Navbar.propTypes = {
-    navbarStyle: PropTypes.object,
     button: PropTypes.object,
-    row: PropTypes.object,
-    menuWrapper: PropTypes.object,
   };
 
 };
