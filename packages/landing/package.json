@@ -5,7 +5,7 @@
   "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "vercel-build",
     "start": "next start",
     "serve": "npm run build && firebase emulators:start --only functions,hosting",
     "shell": "npm run build && firebase functions:shell",
