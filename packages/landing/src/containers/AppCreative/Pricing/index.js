@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
