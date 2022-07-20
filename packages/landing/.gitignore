@@ -13,6 +13,9 @@ out
 # production
 /build
 
+# ignore netlify folder
+.netlify
+
 # misc
 .DS_Store
 .env.local
