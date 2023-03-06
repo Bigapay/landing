@@ -1,4 +1,0 @@
-[build]
-  command = "echo 'noOp'"
-  functions = "functions"
-  publish = "packages/landing/src"

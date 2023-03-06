@@ -1,34 +1,20 @@
 {
-  "name": "superprops",
-  "description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. ",
-  "version": "12.0.0",
+  "name": "elegantstack",
   "private": true,
-  "author": "RedQ, Inc",
-  "devDependencies": {
-    "cross-env": "^7.0.2",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.1.2",
-    "rimraf": "^3.0.2"
-  },
-  "workspaces": [
-    "packages/landing"
-  ],
+  "license": "",
+  "workspaces": ["packages/**", "site"],
   "scripts": {
-    "clean": "yarn workspaces run rimraf \"{.next,node_modules,.cache,out,dist}\" && rimraf node_modules",
-    "next-dev": "yarn workspace @superprops/next run dev",
-    "next-build": "yarn workspace @superprops/next run build",
-    "next-start": "yarn workspace @superprops/next run start"
+    "clean": "lerna clean",
+    "release": "lerna version",
+    "prettier:windows": "./node_modules/.bin/prettier --write \"{packages,starters}/**/*.{jsx,js}\""
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "lerna": "^4.0.0",
+    "prettier": "^2.6.2"
   },
-  "lint-staged": {
-    "*.{js,md,css}": [
-      "prettier --trailing-comma es5 --single-quote --write"
-    ]
-  },
-  "dependencies": {}
+  "engines": {
+    "yarn": "^1.17.3",
+    "node": ">=14.15.0"
+  }
 }
