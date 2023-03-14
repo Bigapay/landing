@@ -101,7 +101,7 @@ const IndexPage = props => {
 }
 
 export const query = graphql`
-  query homepageSaasV2BlockContent {
+  query homepageSaasV2BlockContentAndHomepageSaasV2BlockContent {
     allBlockContent(filter: { page: { in: ["homepage/saas-v2", "shared"] } }) {
       nodes {
         ...BlockContent
