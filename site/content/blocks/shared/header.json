@@ -12,19 +12,19 @@
           "text": "Home",
           "type": "ANCHOR",
           "link": "/",
-          "variant": "links.nav-white"
+          "variant": "links.nav-dark"
         },
         {
           "text": "About",
           "type": "ANCHOR",
           "link": "/",
-          "variant": "links.nav-white"
+          "variant": "links.nav-dark"
         }, 
         {
           "text": "Solutions",
           "type": "ANCHOR",
           "link": "/",
-          "variant": "links.nav-white"
+          "variant": "links.nav-dark"
         }, 
         {
           "text": "Pages",
