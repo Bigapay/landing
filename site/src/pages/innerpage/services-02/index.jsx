@@ -55,7 +55,7 @@ const Services02 = props => {
 }
 
 export const query = graphql`
-  query innerpageServices02BlockContent {
+  query innerpageServices02BlockContentAndInnerpageServices02BlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/services-02", "shared"] } }
     ) {

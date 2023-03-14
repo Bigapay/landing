@@ -46,7 +46,7 @@ const AboutUs01 = props => {
 }
 
 export const query = graphql`
-  query innerpageAboutUs01BlockContent {
+  query innerpageAboutUs01BlockContentAndInnerpageAboutUs01BlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/about-us-01", "shared"] } }
     ) {

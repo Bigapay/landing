@@ -41,7 +41,7 @@ const Pricing03 = props => {
 }
 
 export const query = graphql`
-  query innerpagePricing03BlockContent {
+  query innerpagePricing03BlockContentAndInnerpagePricing03BlockContent {
     allBlockContent(
       filter: { page: { in: ["innerpage/pricing-03", "shared"] } }
     ) {
