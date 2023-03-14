@@ -5,92 +5,81 @@
  *
  */
 
-import circle from './assets/circle.png'
+import heroBg from './assets/hexagonal.png'
 
 export default {
   heroContainer: {
     position: `relative`,
-    pt: 5,
-    '::before': {
-      content: `" "`,
-      width: `110%`,
-      height: `1000px`,
+    pt: [5, 6],
+    '::before, ::after': {
       position: `absolute`,
-      top: `-200px`,
-      right: [0, null, null, `35%`],
-      transform: [`none`, null, null, `skew(-23deg, 0deg) rotate(-10deg)`],
-      zIndex: -1,
+      content: `" "`,
+      width: [`full`, `90%`],
+      height: `80%`,
+      top: [`-10%`, 0],
+      right: `50%`,
+      transform: `translate(50%, 0)`,
+      zIndex: -1
+    },
+    '::before': {
       borderRadius: `xl`,
-      background: t => `radial-gradient(
-          circle,
-          ${t.colors.beta} 0%,
-          ${t.colors.alpha} 100%
-        )`,
-      backgroundSize: `100%`,
-      backgroundPosition: `650px bottom`
+      background: t => `linear-gradient(
+          180deg,
+          ${t.colors.omegaLighter} 0%,
+          ${t.colors.omegaLight} 100%
+        )`
     },
     '::after': {
-      content: `" "`,
-      position: `absolute`,
-      top: `50%`,
-      left: `50%`,
-      transform: `translate(-50%, -45%)`,
-      zIndex: -1,
-      size: 'full',
-      maxWidth: 600,
-      maxHeight: 600,
-      background: `url(${circle}) no-repeat center center`,
-      backgroundSize: `contain`,
+      background: `url(${heroBg}) no-repeat right top`,
+      backgroundSize: `50%`,
       opacity: 0.1
     }
   },
   featuresContainer: {
     position: `relative`,
-    overflow: [`hidden`, `unset`],
+    py: [5, 6],
     '::before': {
-      content: `" "`,
-      width: `100%`,
-      height: [`80%`, null, `140%`],
       position: `absolute`,
-      top: [`5%`, null, `-5%`],
-      left: `60%`,
+      content: `" "`,
+      size: `full`,
+      top: 0,
+      right: `50%`,
+      transform: `translate(50%, 0)`,
       zIndex: -1,
       borderRadius: `xl`,
-      transform: `skew(23deg, 0deg) rotate(-10deg)`,
-      background: t => `radial-gradient(
-          circle,
-          ${t.colors.beta} 0%,
-          ${t.colors.alpha} 100%
-        )`,
-      backgroundSize: `100%`,
-      backgroundPosition: `650px bottom`
-    },
-    '::after': {
-      display: [`none`, `block`],
-      content: `" "`,
-      position: `absolute`,
-      top: `-30%`,
-      left: `100%`,
-      transform: `translate(-50%, 0)`,
-      zIndex: -1,
-      size: '600px',
-      background: `url(${circle}) no-repeat center center`,
-      backgroundSize: `cover`,
-      filter: `brightness(60%) sepia(100) saturate(100) hue-rotate(25deg)`,
-      opacity: 0.1
+      background: t => `linear-gradient(
+          150deg,
+          ${t.colors.omegaLighter} 80%,
+          ${t.colors.omegaLight} 100%
+        )`
     }
   },
-  socialProofContainer: {
+  testimonialsContainer: {
     position: `relative`,
-    '::before': {
-      content: `" "`,
-      width: `100%`,
-      height: `100%`,
+    py: [5, 6],
+    '::before, ::after': {
       position: `absolute`,
+      content: `" "`,
+      width: [`full`, `90%`],
+      height: `80%`,
       top: 0,
-      left: 0,
-      zIndex: -2,
-      bg: `#F6F7FA`
+      right: `50%`,
+      transform: `translate(50%, 0)`,
+      zIndex: -1
+    },
+    '::before': {
+      borderRadius: `xl`,
+      background: t => `linear-gradient(
+          150deg,
+          ${t.colors.omegaLighter} 50%,
+          ${t.colors.omegaLight} 100%
+        )`
+    },
+    '::after': {
+      transform: `scaleX(-1)`,
+      background: `url(${heroBg}) no-repeat left top`,
+      backgroundSize: `50%`,
+      opacity: 0.1
     }
   }
 }

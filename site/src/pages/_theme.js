@@ -9,7 +9,7 @@
 
 export default {
   colors: {
-    background: `#FCFCFF`,
+    background: `#FFFFFF`,
     headerBg: `transparent`,
     footerBg: `#F6F7FA`
   }
