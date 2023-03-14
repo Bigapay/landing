@@ -17,13 +17,19 @@
         {
           "text": "About",
           "type": "ANCHOR",
-          "link": "/",
+          "link": "/innerpage/about-us-02",
           "variant": "links.nav-dark"
         }, 
         {
           "text": "Solutions",
           "type": "ANCHOR",
-          "link": "/",
+          "link": "/innerpage/services-01/",
+          "variant": "links.nav-dark"
+        },
+        {
+          "text": "Pricing",
+          "type": "ANCHOR",
+          "link": "/innerpage/pricing-03/",
           "variant": "links.nav-dark"
         }, 
         {
@@ -34,14 +40,14 @@
             {
               "buttons": [
                 {
-                  "text": "LANDING PAGES",
+                  "text": "Resources",
                   "type": "SUB",
                   "variant": "links.disabled",
                   "buttons": [
                     {
-                      "text": "Software",
+                      "text": "Our Company",
                       "type": "PAGE",
-                      "link": "/homepage/saas/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -49,9 +55,9 @@
                       }
                     },
                     {
-                      "text": "Software v2",
+                      "text": "Blog",
                       "type": "PAGE",
-                      "link": "/homepage/saas-v2/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -66,9 +72,9 @@
                   "variant": "links.hidden",
                   "buttons": [
                     {
-                      "text": "Fintech Startup",
+                      "text": "Partnership",
                       "type": "PAGE",
-                      "link": "/homepage/fintech/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -76,9 +82,9 @@
                       }
                     },
                     {
-                      "text": "Consulting",
+                      "text": "Carreers",
                       "type": "PAGE",
-                      "link": "/homepage/consulting/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -93,9 +99,9 @@
                   "variant": "links.hidden",
                   "buttons": [
                     {
-                      "text": "Mobile App",
+                      "text": "Help Center",
                       "type": "PAGE",
-                      "link": "/homepage/app/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -103,102 +109,14 @@
                       }
                     },
                     {
-                      "text": "Marketing",
+                      "text": "FAQ's",
                       "type": "PAGE",
-                      "link": "/homepage/marketing/",
+                      "link": "/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
                         "color": "omegaDark"
                       }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "container": {
-                "bg": "omegaLighter"
-              },
-              "buttons": [
-                {
-                  "text": "PRICING",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bx-dollar-circle.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "Pricing 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-01/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Pricing 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-02/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Pricing 03",
-                      "type": "PAGE",
-                      "link": "/innerpage/pricing-03/",
-                      "variant": "links.nav-dark"
-                    }
-                  ]
-                },
-                {
-                  "text": "SERVICES",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bxs-component.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "Services 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-01/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Services 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-02/",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "Services 03",
-                      "type": "PAGE",
-                      "link": "/innerpage/services-03/",
-                      "variant": "links.nav-dark"
-                    }
-                  ]
-                },
-                {
-                  "text": "ABOUT US",
-                  "type": "SUB",
-                  "variant": "links.disabled",
-                  "icon": {
-                    "src": "../../assets/flexiblocks/icons/bxs-component.svg",
-                    "color": "alpha"
-                  },
-                  "buttons": [
-                    {
-                      "text": "About 01",
-                      "type": "PAGE",
-                      "link": "/innerpage/about-us-01",
-                      "variant": "links.nav-dark"
-                    },
-                    {
-                      "text": "About 02",
-                      "type": "PAGE",
-                      "link": "/innerpage/about-us-02",
-                      "variant": "links.nav-dark"
                     }
                   ]
                 }
