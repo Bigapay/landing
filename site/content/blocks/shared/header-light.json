@@ -15,72 +15,17 @@
           "variant": "links.nav-white"
         },
         {
-          "text": "Landing Pages",
-          "type": "SUB",
-          "variant": "links.nav-white",
-          "buttons": [
-            {
-              "text": "Software",
-              "type": "PAGE",
-              "link": "/homepage/saas/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#276BF0"
-              }
-            },
-            {
-              "text": "Software v2",
-              "type": "PAGE",
-              "link": "/homepage/saas-v2/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#FE7245"
-              }
-            },
-            {
-              "text": "Fintech Startup",
-              "type": "PAGE",
-              "link": "/homepage/fintech/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#000000"
-              }
-            },
-            {
-              "text": "Consulting",
-              "type": "PAGE",
-              "link": "/homepage/consulting/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#6E5BD8"
-              }
-            },
-            {
-              "text": "Mobile App",
-              "type": "PAGE",
-              "link": "/homepage/app/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#FF4A32"
-              }
-            },
-            {
-              "text": "Marketing",
-              "type": "PAGE",
-              "link": "/homepage/marketing/",
-              "variant": "links.nav-dark",
-              "icon": {
-                "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
-                "color": "#3D8DFF"
-              }
-            }
-          ]
-        },
+          "text": "About",
+          "type": "ANCHOR",
+          "link": "/",
+          "variant": "links.nav-white"
+        }, 
+        {
+          "text": "Solutions",
+          "type": "ANCHOR",
+          "link": "/",
+          "variant": "links.nav-white"
+        },        
         {
           "text": "Pages",
           "variant": "links.nav-white",
