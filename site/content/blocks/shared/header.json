@@ -47,7 +47,7 @@
                     {
                       "text": "Our Company",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/innerpage/about-us-02",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
