@@ -13,8 +13,8 @@ module.exports = {
   ],
   // Customize your site metadata
   siteMetadata: {
-    title: 'FlexiBlocks Theme',
+    title: 'BigaPay',
     name: 'FlexiBlocks',
-    description: 'My site description...'
+    description: 'BigaPay...'
   }
 }
