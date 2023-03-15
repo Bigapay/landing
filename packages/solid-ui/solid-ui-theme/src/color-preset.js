@@ -75,7 +75,7 @@ module.exports = {
   },
   blue: {
     50: '#fef7ed',
-    100: '#fdeeda',
+    100: '#dedbea',
     200: '#fde6c8',
     300: '#fcddb5',
     400: '#fbd5a3',
@@ -87,7 +87,7 @@ module.exports = {
   },
   orange: {
     50: '#fef7ed',
-    100: '#fdeeda',
+    100: '#dedbea',
     200: '#fde6c8',
     300: '#fcddb5',
     400: '#fbd5a3',
