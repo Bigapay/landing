@@ -119,6 +119,12 @@
             }
             
           ]
+        },
+        {
+          "text": "Pricing",
+          "type": "PAGE",
+          "link": "/pricing",
+          "variant": "links.nav-dark"
         }
       ]
     },
