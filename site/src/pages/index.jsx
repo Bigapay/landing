@@ -7,16 +7,14 @@ import Divider from '@solid-ui-components/Divider'
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import ModalSimple from '@solid-ui-blocks/Modal/Block02'
 import Header from '@solid-ui-blocks/Header/Block01'
-import Hero from '@solid-ui-blocks/Hero/Block02'
-import Features from '@solid-ui-blocks/Features/Block06'
-import FeatureTabOne from '@solid-ui-blocks/FeaturesWithPhoto/Block05'
-import FeatureTabTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block06'
-import FeatureTabThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
-import Pricing from '@solid-ui-blocks/Pricing/Block01'
-import WhyChooseUs from '@solid-ui-blocks/Features/Block04'
-import GetStarted from '@solid-ui-blocks/Stats/Block01'
-import Testimonials from '@solid-ui-blocks/Testimonials/Block01'
+import Hero from '@solid-ui-blocks/Hero/Block01'
 import Companies from '@solid-ui-blocks/Companies/Block01'
+import Features from '@solid-ui-blocks/Features/Block05'
+import FeatureOne from '@solid-ui-blocks/FeaturesWithPhoto/Block07'
+import WhyChooseUs from '@solid-ui-blocks/Features/Block01'
+import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block06'
+import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block03'
+import FeatureThreeMore from '@solid-ui-blocks/Features/Block06'
 import Blog from '@solid-ui-blocks/Blog/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
@@ -36,41 +34,41 @@ const IndexPage = props => {
       <ModalSimple content={content['advertisement']} />
       {/* Blocks */}
       <Header content={content['header']} />
-      <Divider space='5' />
-      <Container variant='full' sx={styles.heroContainer}>
-        <Hero content={content['hero']} />
+      <Divider space='4' />
+      <Divider space='4' />
+      <Container variant='wide' sx={styles.heroContainer}>
+        <Hero content={content['hero']} reverse />
       </Container>
+      <Divider space='4' />
+      <Companies content={content['companies']} />
+      <Divider space='5' />
       <Divider space='5' />
       <Features content={content['features']} />
       <Divider space='5' />
       <Divider space='5' />
-      <Container variant='wide' sx={styles.featuresContainer}>
-        <FeatureTabOne content={content['feature-tab-one']} reverse />
-        <Divider space='5' />
-        <Divider space='5' />
-        <FeatureTabTwo content={content['feature-tab-two']} />
-        <Divider space='5' />
-        <Divider space='5' />
-        <FeatureTabThree content={content['feature-tab-three']} reverse />
+      <Container variant='wide' sx={styles.featureOneContainer}>
+        <FeatureOne content={content['feature-one']} />
       </Container>
       <Divider space='5' />
       <Divider space='5' />
-      <WhyChooseUs content={content['why-choose-us']} />
-      <Divider space='5' />
-      <Divider space='5' />
-      <Pricing content={content['pricing']} />
-      <Divider space='5' />
-      <Divider space='5' />
-      <Container variant='full' sx={styles.testimonialsContainer}>
-        <Testimonials content={content['testimonials']} />
+      <Container variant='wide' sx={styles.whyChooseUsContainer}>
+        <WhyChooseUs content={content['why-choose-us']} />
       </Container>
-      <Companies content={content['companies']} />
       <Divider space='5' />
-      <GetStarted content={content['get-started']} />
+      <Divider space='5' />
+      <Container variant='wide' sx={styles.featureTwoContainer}>
+        <FeatureTwo content={content['feature-two']} reverse />
+      </Container>
+      <Divider space='5' />
+      <Divider space='5' />
+      <Container variant='full' sx={styles.featureThreeContainer}>
+        <FeatureThree content={content['feature-three']} />
+        <Divider space='4' />
+        <FeatureThreeMore content={content['feature-three-more']} />
+      </Container>
       <Divider space='5' />
       <Divider space='5' />
       <Blog content={content['latest-blogs']} />
-      <Divider space='5' />
       <Divider space='5' />
       <Footer content={content['footer']} />
     </Layout>
@@ -78,8 +76,8 @@ const IndexPage = props => {
 }
 
 export const query = graphql`
-  query homepageSaasBlockContentAndHomepageSaasBlockContent{
-    allBlockContent(filter: { page: { in: ["homepage/saas", "shared"] } }) {
+  query homepageSiteBlockContent {
+    allBlockContent(filter: { page: { in: ["homepage/fintech", "shared"] } }) {
       nodes {
         ...BlockContent
       }

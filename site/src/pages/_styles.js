@@ -5,81 +5,117 @@
  *
  */
 
-import heroBg from './assets/hexagonal.png'
+import holographic from './assets/holographic.jpg'
 
 export default {
   heroContainer: {
     position: `relative`,
-    pt: [5, 6],
+    py: [3],
     '::before, ::after': {
       position: `absolute`,
       content: `" "`,
-      width: [`full`, `90%`],
-      height: `80%`,
-      top: [`-10%`, 0],
+      width: `full`,
+      height: `85%`,
+      top: [`25%`, null, null, `50%`],
       right: `50%`,
-      transform: `translate(50%, 0)`,
-      zIndex: -1
-    },
-    '::before': {
-      borderRadius: `xl`,
-      background: t => `linear-gradient(
-          180deg,
-          ${t.colors.omegaLighter} 0%,
-          ${t.colors.omegaLight} 100%
-        )`
+      transform: `translate(50%, -50%)`,
+      zIndex: -1,
+      borderRadius: `xl`
     },
     '::after': {
-      background: `url(${heroBg}) no-repeat right top`,
-      backgroundSize: `50%`,
-      opacity: 0.1
+      background: `linear-gradient(
+          180deg,
+          rgba(255,255,255,0.2) 0%,
+          rgba(255,255,255,0.9) 100%
+        )`
+    },
+    '::before': {
+      background: `url(${holographic}) no-repeat center center`,
+      backgroundSize: `cover`
     }
   },
-  featuresContainer: {
+  featureOneContainer: {
     position: `relative`,
-    py: [5, 6],
+    py: [3],
+    '::before, ::after': {
+      position: `absolute`,
+      content: `" "`,
+      size: `70vw`,
+      maxWidth: `500px`,
+      maxHeight: `500px`,
+      top: `50%`,
+      left: `0%`,
+      transform: [`translate(15vw, -185%)`, `translate(20%, -85%)`],
+      zIndex: -2,
+      borderRadius: `full`
+    },
+    '::after': {
+      background: `linear-gradient(
+          180deg,
+          rgba(255,255,255,0.2) 0%,
+          rgba(255,255,255,0.9) 100%
+        )`
+    },
     '::before': {
+      background: `url(${holographic}) no-repeat center center`,
+      backgroundSize: `cover`
+    }
+  },
+  featureTwoContainer: {
+    position: `relative`,
+    py: [3],
+    '::before, ::after': {
+      position: `absolute`,
+      content: `" "`,
+      size: `70vw`,
+      maxWidth: `500px`,
+      maxHeight: `500px`,
+      top: `50%`,
+      right: `0%`,
+      transform: [`translate(-15vw, 30%)`, `translate(-15%, -85%)`],
+      zIndex: -2,
+      borderRadius: `full`
+    },
+    '::after': {
+      background: `linear-gradient(
+          180deg,
+          rgba(255,255,255,0.2) 0%,
+          rgba(255,255,255,0.9) 100%
+        )`
+    },
+    '::before': {
+      background: `url(${holographic}) no-repeat center center`,
+      backgroundSize: `cover`
+    }
+  },
+  featureThreeContainer: {
+    position: `relative`,
+    py: [4],
+    '::before, ::after': {
       position: `absolute`,
       content: `" "`,
       size: `full`,
-      top: 0,
-      right: `50%`,
-      transform: `translate(50%, 0)`,
-      zIndex: -1,
-      borderRadius: `xl`,
-      background: t => `linear-gradient(
-          150deg,
-          ${t.colors.omegaLighter} 80%,
-          ${t.colors.omegaLight} 100%
-        )`
-    }
-  },
-  testimonialsContainer: {
-    position: `relative`,
-    py: [5, 6],
-    '::before, ::after': {
-      position: `absolute`,
-      content: `" "`,
-      width: [`full`, `90%`],
-      height: `80%`,
-      top: 0,
-      right: `50%`,
-      transform: `translate(50%, 0)`,
+      top: `30%`,
+      right: `0%`,
       zIndex: -1
     },
-    '::before': {
-      borderRadius: `xl`,
-      background: t => `linear-gradient(
-          150deg,
-          ${t.colors.omegaLighter} 50%,
-          ${t.colors.omegaLight} 100%
+    '::after': {
+      background: `linear-gradient(
+          180deg,
+          rgba(255,255,255,1) 0%,
+          rgba(255,255,255,0.6) 50%,
+          rgba(255,255,255,1) 100%
         )`
     },
-    '::after': {
-      transform: `scaleX(-1)`,
-      background: `url(${heroBg}) no-repeat left top`,
-      backgroundSize: `50%`,
-      opacity: 0.1
+    '::before': {
+      background: `url(${holographic}) no-repeat center center`,
+      backgroundSize: `cover`
     }
+  },
+  whyChooseUsContainer: {
+    bg: `omegaDarker`,
+    borderRadius: `xl`,
+    py: 5,
+    px: [4, 0]
   }
 }

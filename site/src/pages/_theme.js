@@ -10,7 +10,6 @@
 export default {
   colors: {
     background: `#FFFFFF`,
-    headerBg: `transparent`,
-    footerBg: `#F6F7FA`
+    footerBg: `transparent`
   }
 }
