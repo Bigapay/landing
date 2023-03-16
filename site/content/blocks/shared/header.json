@@ -7,33 +7,28 @@
   ],
   "collection": [
     {
+      
       "buttons": [
         {
-          "text": "Home",
-          "type": "ANCHOR",
-          "link": "/",
+          "text": "For Business",
+          "type": "PAGE",
+          "link": "",
           "variant": "links.nav-dark"
         },
         {
-          "text": "About",
-          "type": "ANCHOR",
-          "link": "/innerpage/about-us-02",
+          "text": "For Consumers",
+          "type": "PAGE",
+          "link": "",
           "variant": "links.nav-dark"
-        }, 
+        },
         {
           "text": "Solutions",
-          "type": "ANCHOR",
-          "link": "/innerpage/services-01/",
+          "type": "PAGE",
+          "link": "",
           "variant": "links.nav-dark"
         },
         {
-          "text": "Pricing",
-          "type": "ANCHOR",
-          "link": "/innerpage/pricing-03/",
-          "variant": "links.nav-dark"
-        }, 
-        {
-          "text": "Pages",
+          "text": "Resources",
           "variant": "links.nav-dark",
           "type": "SUB",
           "collection": [
@@ -45,9 +40,9 @@
                   "variant": "links.disabled",
                   "buttons": [
                     {
-                      "text": "Our Company",
+                      "text": "About Us",
                       "type": "PAGE",
-                      "link": "/innerpage/about-us-02",
+                      "link": "/innerpage/about-us-02/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -55,9 +50,9 @@
                       }
                     },
                     {
-                      "text": "Blog",
+                      "text": "Support Center",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/innerpage/support-center/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -72,9 +67,9 @@
                   "variant": "links.hidden",
                   "buttons": [
                     {
-                      "text": "Partnership",
+                      "text": "Careers",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/innerpage/careers/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -82,9 +77,9 @@
                       }
                     },
                     {
-                      "text": "Carreers",
+                      "text": "innerpage",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/homepage/partnerships/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -99,9 +94,9 @@
                   "variant": "links.hidden",
                   "buttons": [
                     {
-                      "text": "Help Center",
+                      "text": "Developers",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/innerpage/about-us-01/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -109,9 +104,9 @@
                       }
                     },
                     {
-                      "text": "FAQ's",
+                      "text": "API Documentation",
                       "type": "PAGE",
-                      "link": "/",
+                      "link": "/innerpage/api/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -122,6 +117,7 @@
                 }
               ]
             }
+            
           ]
         },
         {
@@ -166,10 +162,16 @@
     {
       "buttons": [
         {
-          "text": "Contact Us",
-          "type": "MODAL",
-          "link": "contact",
+          "text": "Get Started",
+          "type": "PAGE",
+          "link": "innerpage/get-started/",
           "variant": "secondary"
+        },
+        {
+          "text": "Sign In",
+          "type": "PAGE",
+          "link": "/innerpage/sign-in",
+          "variant": "primary"
         }
       ]
     }
