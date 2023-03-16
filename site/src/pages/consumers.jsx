@@ -21,7 +21,7 @@ const ConsumersPage = props => {
 
   return (
     <Layout theme={theme} {...props}>
-      <Seo title='Home' />
+      <Seo title='Consumers' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />

@@ -19,7 +19,7 @@ const Pricing02 = props => {
 
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo title='Pricing' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />

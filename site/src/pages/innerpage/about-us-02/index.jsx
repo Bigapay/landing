@@ -20,7 +20,7 @@ const AboutUs02 = props => {
 
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo title='About Us' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />

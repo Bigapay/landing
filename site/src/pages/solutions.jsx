@@ -21,7 +21,7 @@ const SolutionsPage = props => {
 
   return (
     <Layout theme={theme} {...props}>
-      <Seo title='Home' />
+      <Seo title='Solutions' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
