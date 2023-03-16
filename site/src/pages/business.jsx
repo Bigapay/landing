@@ -45,7 +45,7 @@ const BusinessPage = props => {
 }
 
 export const query = graphql`
-  query homepageSiteBlockContent {
+  query businessSiteBlockContent {
     allBlockContent(filter: { page: { in: ["homepage/fintech", "shared"] } }) {
       nodes {
         ...BlockContent
