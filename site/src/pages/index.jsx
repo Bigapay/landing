@@ -16,6 +16,7 @@ import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block06'
 import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block03'
 import FeatureThreeMore from '@solid-ui-blocks/Features/Block06'
 import Blog from '@solid-ui-blocks/Blog/Block01'
+import Download from '@solid-ui-blocks/CallToAction/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 import theme from './_theme'
@@ -70,6 +71,8 @@ const IndexPage = props => {
       <Divider space='5' />
       <Blog content={content['latest-blogs']} />
       <Divider space='5' />
+      <Download content={content['download']} />
+      <Divider space='4' />
       <Footer content={content['footer']} />
     </Layout>
   )

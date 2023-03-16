@@ -15,10 +15,10 @@ const placeholderImage = {
 
 export default {
   text: [
-    { text: 'KICKER TEXT', variant: 'h4' },
+    { text: 'Lets build something together', variant: 'h4' },
     { text: 'Title Text', variant: 'h2' },
-    { text: 'First placeholder for description text.', variant: 'medium' },
-    { text: 'Second placeholder for description text.', variant: 'medium' }
+    { text: 'Lets build something together', variant: 'h2' },
+    { text: 'Book a call with us to discover how Biga can help you get to market in no time.', variant: 'medium' }
   ],
   images: [
     {
