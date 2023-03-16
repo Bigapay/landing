@@ -18,13 +18,13 @@
         {
           "text": "For Consumers",
           "type": "PAGE",
-          "link": "/",
+          "link": "/consumers",
           "variant": "links.nav-dark"
         },
         {
           "text": "Solutions",
           "type": "PAGE",
-          "link": "/",
+          "link": "/solutions",
           "variant": "links.nav-dark"
         },
         {
@@ -77,7 +77,7 @@
                       }
                     },
                     {
-                      "text": "innerpage",
+                      "text": "Partnerships",
                       "type": "PAGE",
                       "link": "/homepage/partnerships/",
                       "variant": "links.nav-dark",
