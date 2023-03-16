@@ -12,19 +12,19 @@
         {
           "text": "For Business",
           "type": "PAGE",
-          "link": "",
+          "link": "/business",
           "variant": "links.nav-dark"
         },
         {
           "text": "For Consumers",
           "type": "PAGE",
-          "link": "",
+          "link": "/",
           "variant": "links.nav-dark"
         },
         {
           "text": "Solutions",
           "type": "PAGE",
-          "link": "",
+          "link": "/",
           "variant": "links.nav-dark"
         },
         {
