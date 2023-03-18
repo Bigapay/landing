@@ -23,6 +23,6 @@ module.exports = {
     title: 'BigaPay',
     name: 'Technology',
     description: 'BigaPay...',
-    icon: 'content/assets/favicon.png'
+    icon: 'content/assets/favicon.ico'
   }
 }

@@ -2,14 +2,14 @@
   "images": [
     {
       "src": "../../assets/flexiblocks/shared/logo.png",
-      "alt": "alt text"
+      "alt": "BigaPay"
     }
   ],
   "collection": [
     {
       "text": [
         {
-          "text": "Our Company"
+          "text": "For Business"
         }
       ],
       "buttons": [
@@ -36,7 +36,7 @@
     {
       "text": [
         {
-          "text": "For Developers"
+          "text": "For Consumers"
         }
       ],
       "buttons": [
@@ -63,7 +63,7 @@
     {
       "text": [
         {
-          "text": "Platform"
+          "text": "Solutions"
         }
       ],
       "buttons": [
