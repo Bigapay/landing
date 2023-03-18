@@ -20,8 +20,8 @@ module.exports = {
   ],
   // Customize your site metadata
   siteMetadata: {
-    title: 'BigaPay',
-    name: 'Technology',
+    title: 'Biga Technologies Ltd',
+    name: 'Biga Technologies Ltd',
     description: 'BigaPay...',
     icon: 'content/assets/favicon.ico'
   }
