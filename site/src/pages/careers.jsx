@@ -21,7 +21,7 @@ const careerPage = props => {
 
   return (
     <Layout theme={theme} {...props}>
-      <Seo title='Solutions' />
+      <Seo title='Careers' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />

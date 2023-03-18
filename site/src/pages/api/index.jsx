@@ -24,7 +24,7 @@ const Api = props => {
 
   return (
     <Layout {...props}>
-      <Seo title='Home' />
+      <Seo title='API' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />

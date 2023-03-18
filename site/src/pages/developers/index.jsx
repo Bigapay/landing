@@ -21,7 +21,7 @@ const Services03 = props => {
 
   return (
     <Layout {...props}>
-      <Seo title='Solutions' />
+      <Seo title='Developers' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
