@@ -24,7 +24,7 @@
         {
           "text": "Solutions",
           "type": "PAGE",
-          "link": "/innerpage/services-03",
+          "link": "/solutions",
           "variant": "links.nav-white"
         },
         {
@@ -42,7 +42,7 @@
                     {
                       "text": "About Us",
                       "type": "PAGE",
-                      "link": "/innerpage/about-us-02/",
+                      "link": "/about-us/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -52,7 +52,7 @@
                     {
                       "text": "Support Center",
                       "type": "PAGE",
-                      "link": "/innerpage/support-center/",
+                      "link": "/support-center/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -69,7 +69,7 @@
                     {
                       "text": "Careers",
                       "type": "PAGE",
-                      "link": "/innerpage/careers/",
+                      "link": "/careers/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -79,7 +79,7 @@
                     {
                       "text": "Partnerships",
                       "type": "PAGE",
-                      "link": "/homepage/partnerships/",
+                      "link": "/partnerships/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -96,7 +96,7 @@
                     {
                       "text": "Developers",
                       "type": "PAGE",
-                      "link": "/innerpage/about-us-01/",
+                      "link": "/developers/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
@@ -106,7 +106,7 @@
                     {
                       "text": "API Documentation",
                       "type": "PAGE",
-                      "link": "/innerpage/api/",
+                      "link": "/api/",
                       "variant": "links.nav-dark",
                       "icon": {
                         "src": "../../assets/flexiblocks/icons/bxs-window-alt.svg",
