@@ -1,0 +1,13 @@
+.footer_link{
+  color: #718096;
+  text-decoration: none;
+}
+.footer_link:not(:last-child){
+  margin-right: 1rem;
+}
+.footer_bottom {
+  border-top: 1px solid #dedede;
+}
+.foot-padd{
+  padding:2.5rem 0;
+}

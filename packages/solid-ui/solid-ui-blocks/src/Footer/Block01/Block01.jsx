@@ -6,6 +6,7 @@ import ContentImages from '@solid-ui-components/ContentImages'
 import PoweredByGatsby from '@solid-ui-components/PoweredByGatsby'
 import ContentButtons from '@solid-ui-components/ContentButtons'
 import WithDefaultContent from '@solid-ui-blocks/WithDefaultContent'
+import './styles.css'
 
 const styles = {
   wrapper: {
@@ -18,6 +19,8 @@ const styles = {
     alignItems: [`center`, `flex-start`],
     py: 5
   }
+
+
 }
 
 const FooterBlock01 = ({ content: { images, collection } }) => {
@@ -35,7 +38,7 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
               © {new Date().getFullYear()}, All Rights Reserved.
             </Box>
             <Box>
-              <PoweredByGatsby />
+              {/* <PoweredByGatsby /> */}
             </Box>
           </Box>
           {collection?.map(
@@ -61,8 +64,19 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
           )}
         </Flex>
       </Container>
+      <Container px='4'  className={`footer_bottom`}>
+        <Flex sx={styles.footer} className={`foot-padd`}>
+          <div>Copyright © All Rights Reserved By Biga Technologies Ltd.</div>
+          <div>
+          <GLink to='/privacy-policy' className={`footer_link`}>Privacy Policy</GLink>
+          <GLink to='/terms' className={`footer_link`}>Terms and Conditions</GLink>
+          {/* <a href="#">Terms & Conditions</a> */}
+          </div>
+      </Flex>
+      </Container>
     </Box>
   )
+  
 }
 
 FooterBlock01.defaultProps = {
