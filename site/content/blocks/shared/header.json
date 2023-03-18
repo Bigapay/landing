@@ -132,15 +132,19 @@
       "buttons": [
         {
           "text": "Get Started",
-          "type": "PAGE",
-          "link": "innerpage/get-started/",
+          "type": "MODAL",
+          "link": "contact",
           "variant": "secondary"
         },
         {
           "text": "Sign In",
-          "type": "PAGE",
-          "link": "/innerpage/sign-in",
-          "variant": "primary-light"
+          "type": "MODAL",
+          "link": "authentication",
+          "variant": "primary-light",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bx-lock-alt.svg",
+            "color": "alphaLight"
+          }
         }
       ]
     }

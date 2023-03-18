@@ -1,7 +1,7 @@
 {
   "images": [
     {
-      "src": "../../assets/flexiblocks/shared/logo.png",
+      "src": "../../assets/flexiblocks/shared/logo.svg",
       "alt": "BigaPay"
     }
   ],
@@ -16,19 +16,19 @@
         {
           "text": "About Us",
           "type": "PAGE",
-          "link": "/innerpage/about-us-02/",
+          "link": "/about-us/",
           "variant": "links.nav-light"
         },
         {
           "text": "Partnerships",
           "type": "PAGE",
-          "link": "/innerpage/partnerships/",
+          "link": "/partnerships/",
           "variant": "links.nav-light"
         },
         {
           "text": "Careers",
           "type": "PAGE",
-          "link": "/innerpage/careers/",
+          "link": "/careers/",
           "variant": "links.nav-light"
         }
       ]
@@ -43,19 +43,19 @@
         {
           "text": "API Documentation",
           "type": "PAGE",
-          "link": "/innerpage/api/",
+          "link": "/api/",
           "variant": "links.nav-light"
         },
         {
           "text": "Support Center",
           "type": "PAGE",
-          "link": "/innerpage/support-center/",
+          "link": "/support-center/",
           "variant": "links.nav-light"
         },
         {
           "text": "Developers",
           "type": "PAGE",
-          "link": "/innerpage/developers/",
+          "link": "/developers/",
           "variant": "links.nav-light"
         }
       ]
