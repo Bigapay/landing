@@ -7,24 +7,22 @@ import Divider from '@solid-ui-components/Divider'
 import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import ModalSimple from '@solid-ui-blocks/Modal/Block02'
 import Header from '@solid-ui-blocks/Header/Block01'
-import Tabs from '@solid-ui-components/Tabs'
 import Hero from '@solid-ui-blocks/Hero/Block01'
-import FeatureOne from '@solid-ui-blocks/FeaturesWithPhoto/Block02'
-import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block05'
-import FeatureThree from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
-import Features from '@solid-ui-blocks/Features/Block02'
-import Screenshot from '@solid-ui-blocks/FeaturesWithPhoto/Block03'
-import Process from '@solid-ui-blocks/Features/Block03'
-import Testimonials from '@solid-ui-blocks/Testimonials/Block03'
 import Companies from '@solid-ui-blocks/Companies/Block01'
-import Pricing from '@solid-ui-blocks/Pricing/Block02'
+import BuildBrand from '@solid-ui-blocks/FeaturesWithPhoto/Block04'
+import FeatureOne from '@solid-ui-blocks/FeaturesWithPhoto/Block01'
+import WhyChooseUs from '@solid-ui-blocks/Features/Block04'
+import FeatureTwo from '@solid-ui-blocks/FeaturesWithPhoto/Block02'
 import Stats from '@solid-ui-blocks/Stats/Block01'
-import Faq from '@solid-ui-blocks/Faq/Block01'
+import Strategies from '@solid-ui-blocks/Features/Block06'
+import Download from '@solid-ui-blocks/CallToAction/Block02'
+import Testimonials from '@solid-ui-blocks/Testimonials/Block02'
+import GetStarted from '@solid-ui-blocks/CallToAction/Block01'
 import Blog from '@solid-ui-blocks/Blog/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import theme from './_theme_busi'
-import styles from './_styles_busi'
+import theme from './_theme_cons'
+import styles from './_styles_cons'
 
 const IndexPage = props => {
   const { allBlockContent } = props.data
@@ -32,64 +30,46 @@ const IndexPage = props => {
 
   return (
     <Layout theme={theme} {...props}>
-      <Seo title='For Business' />
+      <Seo title='For Consumers' />
       {/* Modals */}
       <ModalWithTabs content={content['authentication']} reverse />
       <ModalWithTabs content={content['contact']} />
       <ModalSimple content={content['advertisement']} />
       {/* Blocks */}
-      <Header content={content['header-light']} />
-      <Divider space='5' />
+      <Header content={content['header']} />
       <Container variant='full' sx={styles.heroContainer}>
         <Hero content={content['hero']} reverse />
       </Container>
-      <Divider space='5' />
-      <Divider space='5' />
-      <Divider space='5' />
-      <Container variant='wide' sx={styles.tabsContainer}>
-        <Tabs space={5}>
-          <FeatureOne content={content['tab-feature-one']} />
-          <FeatureTwo content={content['tab-feature-two']} />
-          <FeatureThree content={content['tab-feature-three']} />
-        </Tabs>
-      </Container>
-      <Divider space='5' />
-      <Divider space='5' />
-      <Divider space='5' />
-      <Container variant='wide' sx={styles.tabsContainer}>
-        <Tabs space={3} variant='dots' position='bottom' arrows>
-          <Screenshot content={content['screenshot-one']} />
-          <Screenshot content={content['screenshot-two']} />
-          <Screenshot content={content['screenshot-three']} />
-        </Tabs>
-      </Container>
-      <Divider space='5' />
-      <Divider space='5' />
-      <Divider space='5' />
-      <Process content={content['process']} />
-      <Divider space='5' />
-      <Container variant='full' sx={styles.featuresContainer}>
-        <Features content={content['features']} />
-      </Container>
-      <Divider space='5' />
-      <Container variant='full' sx={styles.socialProofContainer}>
-        <Divider space='5' />
-        <Divider space='5' />
-        <Container variant='narrow'>
-          <Stats content={content['stats']} />
-          <Divider space='5' />
-        </Container>
-        <Testimonials content={content['testimonials']} />
-        <Divider space='5' />
-      </Container>
-      <Divider space='5' />
-      <Divider space='5' />
-      <Pricing content={content['pricing']} />
-      <Divider space='5' />
+      <Divider space='4' />
       <Companies content={content['companies']} />
       <Divider space='5' />
-      <Container variant='narrow'>
-        <Faq content={content['faq']} />
+      <Divider space='5' />
+      <Container variant='full' sx={styles.buildBrandContainer}>
+        <BuildBrand content={content['build-brand']} />
+      </Container>
+      <Divider space='5' />
+      <Divider space='5' />
+      <FeatureOne content={content['feature-one']} />
+      <Divider space='5' />
+      <Divider space='5' />
+      <WhyChooseUs content={content['why-choose-us']} />
+      <Divider space='5' />
+      <Divider space='5' />
+      <FeatureTwo content={content['feature-two']} reverse />
+      <Divider space='5' />
+      <Divider space='5' />
+      <Stats content={content['stats']} />
+      <Divider space='4' />
+      <Strategies content={content['strategies']} />
+      <Divider space='4' />
+      <Download content={content['download']} />
+      <Divider space='5' />
+      <Divider space='5' />
+      <Testimonials content={content['testimonials']} />
+      <Divider space='5' />
+      <Divider space='5' />
+      <Container sx={styles.getStartedContainer}>
+        <GetStarted content={content['get-started']} />
       </Container>
       <Divider space='5' />
       <Divider space='5' />
@@ -101,8 +81,10 @@ const IndexPage = props => {
 }
 
 export const query = graphql`
-  query homepagesiteSaasV2BlockContent {
-    allBlockContent(filter: { page: { in: ["homepage/saas-v2", "shared"] } }) {
+  query homepagesiteConsultingBlockContent {
+    allBlockContent(
+      filter: { page: { in: ["homepage/consulting", "shared"] } }
+    ) {
       nodes {
         ...BlockContent
       }

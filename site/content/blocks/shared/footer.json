@@ -1,10 +1,5 @@
 {
-  "images": [
-    {
-      "src": "../../assets/flexiblocks/shared/logo.svg",
-      "alt": "BigaPay"
-    }
-  ],
+  
   "collection": [
     {
       "text": [
@@ -84,6 +79,45 @@
           "type": "PAGE",
           "link": "/solutions",
           "variant": "links.nav-light"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Social Media"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Github",
+          "type": "PAGE",
+          "link": "https://github.com/gatsby",
+          "variant": "links.nav-light",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-github.svg",
+            "color": "#2f4f4f"
+          }
+        },
+        {
+          "text": "Twitter",
+          "type": "PAGE",
+          "link": "https://twitter.com/gatsby",
+          "variant": "links.nav-light",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
+            "color": "#1da1f2"
+          }
+        },
+        {
+          "text": "Instagram",
+          "type": "PAGE",
+          "link": "https://instagram.com/gatsby",
+          "variant": "links.nav-light",
+          "icon": {
+            "src": "../../assets/flexiblocks/icons/bxl-instagram.svg",
+            "color": "#c13584"
+          }
         }
       ]
     }
