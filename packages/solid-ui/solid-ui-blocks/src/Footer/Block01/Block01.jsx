@@ -28,19 +28,7 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
     <Box sx={styles.wrapper}>
       <Container px='4'>
         <Flex sx={styles.footer}>
-          <Box sx={{ minWidth: 200 }}>
-            <Box pb='1' mb='2' mt={[4, 0]}>
-              <GLink to='/'>
-                <ContentImages content={{ images }} imageEffect='fadeIn' />
-              </GLink>
-            </Box>
-            <Box pt='2' mb={[2, 4]}>
-              © {new Date().getFullYear()}, All Rights Reserved.
-            </Box>
-            <Box>
-              {/* <PoweredByGatsby /> */}
-            </Box>
-          </Box>
+         
           {collection?.map(
             ({ text, buttons }, index) =>
               buttons && (

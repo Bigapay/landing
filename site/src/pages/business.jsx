@@ -81,7 +81,7 @@ const IndexPage = props => {
 }
 
 export const query = graphql`
-  query homepagesiteConsultingBlockContent {
+  query homepagesiteConsultingBlockContentAndHomepagesiteConsultingBlockContent {
     allBlockContent(
       filter: { page: { in: ["homepage/consulting", "shared"] } }
     ) {
