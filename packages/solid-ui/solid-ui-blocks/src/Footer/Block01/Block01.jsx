@@ -17,7 +17,8 @@ const styles = {
     flexDirection: [`column-reverse`, `row`],
     justifyContent: `space-between`,
     alignItems: [`center`, `flex-start`],
-    py: 5
+    pt: 5,
+    pb:3
   }
 
 
@@ -32,7 +33,7 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
           {collection?.map(
             ({ text, buttons }, index) =>
               buttons && (
-                <Box key={`item-${index}`} mb='3'>
+                <Box key={`item-${index}`} mb='1'>
                   <ContentText
                     content={text?.[0]}
                     variant='h5'
@@ -52,6 +53,7 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
           )}
         </Flex>
       </Container>
+     
       <Container px='4'  className={`footer_bottom`}>
         <Flex sx={styles.footer} className={`foot-padd`}>
           <div>Copyright © All Rights Reserved By Biga Technologies Ltd.</div>
@@ -61,6 +63,11 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
           {/* <a href="#">Terms & Conditions</a> */}
           </div>
       </Flex>
+      </Container>
+      <Container>
+        <p className={`text_small`}>Biga Technologies ltd. is a financial technology company, not a bank. </p>
+        <p className={`text_small`}>The Biga Debit Cards and BigaPay Cads are issued by Edebit Systems inc, pursuant to licenses from MasterCard. </p>
+        <p className={`text_small`}>Biga does not provide, nor does it guarantee, any third-party product, service, information, or recommendation and may pay third parties and/or be paid by them for customer referrals. </p>
       </Container>
     </Box>
   )

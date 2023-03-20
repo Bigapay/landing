@@ -8,7 +8,10 @@
 .footer_bottom {
   border-top: 1px solid #dedede;
 }
-.foot-padd{
-  padding:2.5rem 0;
+.foot-padd {
+  padding: 1.5rem 0 !important;
+  font-size: 12px;
+}
+.text_small{
   font-size: 12px;
 }
