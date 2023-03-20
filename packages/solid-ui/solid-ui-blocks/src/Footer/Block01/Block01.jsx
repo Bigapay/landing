@@ -57,7 +57,7 @@ const FooterBlock01 = ({ content: { images, collection } }) => {
           <div>Copyright © All Rights Reserved By Biga Technologies Ltd.</div>
           <div>
           <GLink to='/privacy-policy' className={`footer_link`}>Privacy Policy</GLink>
-          <GLink to='/terms' className={`footer_link`}>Terms and Conditions</GLink>
+          <GLink to='/legal'  className={`footer_link`}>Legal agreement</GLink>
           {/* <a href="#">Terms & Conditions</a> */}
           </div>
       </Flex>
